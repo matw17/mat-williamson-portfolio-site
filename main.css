@@ -19,8 +19,8 @@ background-size:cover;
 
 .gray-box {
     
-    width: 850px;              /* Set the width of the box */
-    height: 500px;             /* Set the height of the box */
+    width: 1050px;              /* Set the width of the box */
+    height: 700px;             /* Set the height of the box */
     background-color: #cccccc; /* Set the background color to a light gray (#cccccc) */
     border: 5px solid #525151;    /* Optional: Add a border around the box */
     padding: 20px;             /* Optional: Add padding inside the box */
