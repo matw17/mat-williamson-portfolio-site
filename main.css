@@ -22,11 +22,27 @@ background-size:cover;
     width: 850px;              /* Set the width of the box */
     height: 500px;             /* Set the height of the box */
     background-color: #cccccc; /* Set the background color to a light gray (#cccccc) */
-    border: 1px solid #000;    /* Optional: Add a border around the box */
+    border: 5px solid #525151;    /* Optional: Add a border around the box */
     padding: 20px;             /* Optional: Add padding inside the box */
     display: flex;             /* Optional: This allows you to center the content */
     align-items: center;       /* Optional: This centers the content vertically */
     justify-content: center;   /* Optional: This centers the content horizontally */
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+    grid-template-areas: 
+        "f f f . . . . . . . i i g"
+        "f f f . . . . . . . l l b"
+        ". . w w . . . . . . e e q"
+        ". . . . . m m m m m . . ."
+        ". . a a . m m m m m . . ."
+        ". . . . . m m m m m . . ."
+        ". . r r . m m m m m . . ."
+        ". . . . . . n n n . . . ."
+        ". . . . . . n n n . . . ."
+        ". . . . . . . . . . . . ."
+        ". . . . . . . . . . . . t";
 }
 
 .page-wrapper{
@@ -42,6 +58,8 @@ background-size:cover;
     color: #1b1b1b;
     border: 2px solid #1b1b1b;
     transition: all 0.3s ease;
+    grid-area: w;
+    text-align: center;
 
 }
 
@@ -56,6 +74,8 @@ background-size:cover;
     color: #1b1b1b;
     border: 2px solid #1b1b1b;
     transition: all 0.3s ease;
+    grid-area: a;
+    text-align: center;
 
 }
 
@@ -70,10 +90,86 @@ background-size:cover;
     color: #1b1b1b;
     border: 2px solid #1b1b1b;
     transition: all 0.3s ease;
+    grid-area: r;
+    text-align: center;
 
 }
 
 .resume:hover {
     background-color: #1b1b1b;
     color: #cccccc;
+}
+
+.insta {
+    color: #1b1b1b;
+    grid-area: i;
+    text-align: center;
+}
+
+.insta:hover {
+    color: red;
+}
+
+.linkedin {
+    color: #1b1b1b;
+    grid-area: l;
+    text-align: center;
+}
+
+.linkedin:hover {
+    color: red;
+}
+
+.email {
+    color: #1b1b1b;
+    grid-area: e;
+    text-align: center;
+}
+
+.email:hover {
+    color: red;
+}
+
+.notebook{
+    grid-area: n;
+}
+
+.arrow1{
+    grid-area: g;
+}
+
+.arrow2{
+    grid-area: b;
+}
+
+.arrow3{
+    grid-area: q;
+}
+
+.trash{
+    grid-area: t;
+}
+
+.folder{
+    grid-area: f;
+}
+
+.message{
+    grid-area: m;
+    text-align: center;
+    color: red;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg); /* Start with 0 degrees of rotation */
+    }
+    to {
+        transform: rotateY(360deg); /* End with 360 degrees of rotation */
+    }
+}
+
+/* Apply the spinning animation to the SVG element */
+.notebook {
+    animation: spin 5s linear infinite; /* Animation name, duration, timing function, and iteration count */
 }
