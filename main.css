@@ -19,8 +19,8 @@ background-size:cover;
 
 .gray-box {
     
-    width: 1050px;              /* Set the width of the box */
-    height: 700px;             /* Set the height of the box */
+    width: 900px;              /* Set the width of the box */
+    height: 500px;             /* Set the height of the box */
     background-color: #cccccc; /* Set the background color to a light gray (#cccccc) */
     border: 5px solid #525151;    /* Optional: Add a border around the box */
     padding: 20px;             /* Optional: Add padding inside the box */
@@ -34,12 +34,12 @@ background-size:cover;
     grid-template-areas: 
         "f f f . . . . . . . i i g"
         "f f f . . . . . . . l l b"
-        ". . w w . . . . . . e e q"
+        ". . . . . . . . . . e e q"
+        ". . w w . m m m m m . . ."
         ". . . . . m m m m m . . ."
         ". . a a . m m m m m . . ."
         ". . . . . m m m m m . . ."
-        ". . r r . m m m m m . . ."
-        ". . . . . . n n n . . . ."
+        ". . r r . . n n n . . . ."
         ". . . . . . n n n . . . ."
         ". . . . . . . . . . . . ."
         ". . . . . . . . . . . . t";
