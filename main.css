@@ -1,13 +1,17 @@
 
 
 
+.logo{
+padding-top: 20px;
+}
+
 body{
     font-family: "JetBrains Mono", monospace;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-background-image:url(assets/Spaceback.png);
-background-size:cover;
+    background-image:url(assets/Spaceback.png);
+    background-size: contain;
 }
 
 .container{
@@ -23,7 +27,8 @@ background-size:cover;
     height: 500px;             /* Set the height of the box */
     background-color: #cccccc; /* Set the background color to a light gray (#cccccc) */
     border: 5px solid #525151;    /* Optional: Add a border around the box */
-    padding: 20px;             /* Optional: Add padding inside the box */
+    padding: 20px;   
+    margin-bottom: 30px;          /* Optional: Add padding inside the box */
     display: flex;             /* Optional: This allows you to center the content */
     align-items: center;       /* Optional: This centers the content vertically */
     justify-content: center;   /* Optional: This centers the content horizontally */
@@ -158,6 +163,7 @@ background-size:cover;
     grid-area: m;
     text-align: center;
     color: red;
+    padding-bottom: 30px;
 }
 
 @keyframes spin {
@@ -171,5 +177,9 @@ background-size:cover;
 
 /* Apply the spinning animation to the SVG element */
 .notebook {
-    animation: spin 5s linear infinite; /* Animation name, duration, timing function, and iteration count */
+    animation: spin 8s linear infinite; /* Animation name, duration, timing function, and iteration count */
+}
+
+a{
+    text-decoration: none;
 }

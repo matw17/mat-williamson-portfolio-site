@@ -1,0 +1,161 @@
+.logo{
+    padding-top: 20px;
+    }
+    
+    body{
+        font-family: "JetBrains Mono", monospace;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        background-image:url(assets/Spaceback.png);
+        background-size: contain;
+    }
+    
+    .container{
+        display: flex;
+                justify-content: center; /* Horizontally center the SVG */
+                align-items:first baseline;     /* Vertically center the SVG */
+                
+    }
+    
+    .gray-box {
+        
+        width: 900px;              /* Set the width of the box */
+        height: 500px;             /* Set the height of the box */
+        background-color: #cccccc; /* Set the background color to a light gray (#cccccc) */
+        border: 5px solid #525151;    /* Optional: Add a border around the box */
+        padding: 20px;   
+        margin-bottom: 30px;          /* Optional: Add padding inside the box */
+        display: flex;             /* Optional: This allows you to center the content */
+        align-items: center;       /* Optional: This centers the content vertically */
+        justify-content: center;   /* Optional: This centers the content horizontally */
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(13, 1fr);
+        grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+        grid-template-areas: 
+            ". f . w w a a r r . . i g"
+            ". f . . . . . . . . . l c"
+            ". . . . . . . . . . . e b"
+            ". . . . . . . . . . . . ."
+            ". . . . . . . . . . . . ."
+            ". . . . . . . . . . . . ."
+            ". . . . . . . . . . . . ."
+            ". . . . . . . . . . . . ."
+            ". . . . . . . . . . . . ."
+            ". . . . . . . . . . . . ."
+            ". . . . . . . . . . . . t";
+    }
+    
+    .page-wrapper{
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center;     /* Center vertically */ 
+        margin-top: 50px;    
+    }
+    /* this is the button for my portfolio work */
+    .my-work{
+        background-color: transparent;
+        padding: 5px;
+        color: #1b1b1b;
+        border: 2px solid #1b1b1b;
+        transition: all 0.3s ease;
+        grid-area: w;
+        text-align: center;
+    
+    }
+    
+    .my-work:hover {
+        background-color: #1b1b1b;
+        color: #cccccc;
+    }
+    /* this is the about me button */
+    .about-me{
+        background-color: transparent;
+        padding: 5px;
+        color: #1b1b1b;
+        border: 2px solid #1b1b1b;
+        transition: all 0.3s ease;
+        grid-area: a;
+        text-align: center;
+    
+    }
+    
+    .about-me:hover {
+        background-color: #1b1b1b;
+        color: #cccccc;
+    }
+    /* this is the button to my report */
+    .resume{
+        background-color: transparent;
+        padding: 5px;
+        color: #1b1b1b;
+        border: 2px solid #1b1b1b;
+        transition: all 0.3s ease;
+        grid-area: r;
+        text-align: center;
+    
+    }
+    
+    .resume:hover {
+        background-color: #1b1b1b;
+        color: #cccccc;
+    }
+    
+    .insta {
+        color: #1b1b1b;
+        grid-area: i;
+        text-align: center;
+    }
+    
+    .insta:hover {
+        color: red;
+    }
+    
+    .linkedin {
+        color: #1b1b1b;
+        grid-area: l;
+        text-align: center;
+    }
+    
+    .linkedin:hover {
+        color: red;
+    }
+    
+    .email {
+        color: #1b1b1b;
+        grid-area: e;
+        text-align: center;
+    }
+    
+    .email:hover {
+        color: red;
+    }
+    
+    .notebook{
+        grid-area: n;
+    }
+    
+    .arrow1{
+        grid-area: g;
+    }
+    
+    .arrow2{
+        grid-area: c;
+    }
+    
+    .arrow3{
+        grid-area: b;
+    }
+    
+    .trash{
+        grid-area: t;
+    }
+    
+    .folder{
+        grid-area: f;
+    }
+    
+    a{
+        text-decoration: none;
+    }
