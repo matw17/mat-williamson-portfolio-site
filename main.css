@@ -185,6 +185,7 @@ a{
     text-decoration: none;
 }
 
-@media screen { 
+@media (min-width: 800px) { 
+    
     
 }
