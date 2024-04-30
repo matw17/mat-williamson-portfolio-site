@@ -8,7 +8,7 @@
         font-weight: weight;
         font-style: normal;
         background-image:url(assets/Spaceback.png);
-        background-size: contain;
+        background-size: cover;
     }
     
     .container{
