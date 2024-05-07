@@ -42,9 +42,9 @@
             ". . . . q q q q . . . . ."
             ". . . . q q q q . . . . ."
             ". . . . q q q q . . . . ."
-            ". . . . q q q q . . . . ."
             ". . . . . . . . . . . . ."
-            ". . . . . . . . . . . . t";
+            ". . . . . . . . . . . . ."
+            ". . . . h h h h . . . . t";
     }
     
     .page-wrapper{
@@ -163,4 +163,111 @@
     .resume-img{
         width: 250px;
         grid-area: q;
+    }
+
+    .download{
+        background-color: transparent;
+        padding: 5px;
+        color: #1b1b1b;
+        border: 2px solid #1b1b1b;
+        transition: all 0.3s ease;
+        grid-area: h;
+        text-align: center;
+    }
+    
+    .download:hover {
+        background-color: #1b1b1b;
+        color: #cccccc;
+    }
+
+    .download-container{
+        display: none;
+    }
+    @media screen and (max-width: 800px) { 
+        body{
+            font-family: "JetBrains Mono", monospace;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+            background-image:url(assets/Spaceback.png);
+            background-size: contain;
+            background-repeat:repeat;
+        }
+        
+         .container{
+            display: grid;
+                    justify-content: center; /* Horizontally center the SVG */
+                    align-items:first baseline;     /* Vertically center the SVG */
+                    
+        }  
+        
+        .gray-box {
+            width: 300px;  
+            height: 800px;            /* Set the width of the box */ 
+            display: grid;          /* Set the height of the box */
+            background-color: #cccccc; /* Set the background color to a light gray (#cccccc) */
+            border: 5px solid #525151;    /* Optional: Add a border around the box */
+            padding: 20px;   
+            margin-bottom: 30px;          /* Optional: Add padding inside the box */
+                         /* Optional: This allows you to center the content */
+             align-items: center;       /*Optional: This centers the content vertically */
+            justify-content: center;   /* Optional: This centers the content horizontally */
+            grid-gap: 5px;
+            grid-template-columns: 50px 50px 50px 50px 50px 50px;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                ". . . . . ."
+                ". . w w . ."
+                ". . a a . ."
+                ". . r r . ."
+                ". . . . . ."
+                ". i i i i ."
+                ". . . . . ."
+                ". . d d . .";
+        }
+        .about-me{
+          
+            background-color: transparent;
+            padding: 5px;
+            color: #1b1b1b;
+            border: 2px solid #1b1b1b;
+            transition: all 0.3s ease;
+            grid-area: a;
+            text-align: center;
+        
+        }
+        .folder{
+            display: none;
+          }
+        .trash{
+            display: none;
+        }
+        .insta{
+            display: none;
+        }
+        .linkedin{
+            display: none;
+        }
+        .email{
+            display: none;
+        }
+        .arrow1{
+            display: none;
+        }
+        .arrow2{
+            display: none;
+        }
+        .arrow3{
+            display: none;
+        }
+        .notebook{
+            width: 120px;
+        }
+        .resume-img{
+            grid-area: i;
+        }
+        .download{
+            grid-area: d;
+        }
+    
     }
